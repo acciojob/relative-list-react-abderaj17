@@ -10,9 +10,9 @@ function DiwaliVisitList() {
   ];
 
   return (
-    <ol>
+    <ol id='relativeList'>
       {relativeList.map((relative) => (
-        <li key={relative.key}>{relative.name}</li>
+        <li key={relative.key} id={relative.key}>{relative.name}</li>
       ))}
     </ol>
   );
